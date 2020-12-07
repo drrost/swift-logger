@@ -46,7 +46,7 @@ private extension FileLogger {
 
     private static func resolvePath(_ name: String) -> String {
         #if targetEnvironment(simulator)
-        print("Simulator")
+        return "/tmp/" + name
         #elseif targetEnvironment(macCatalyst)
         return "/tmp/" + name
         #else

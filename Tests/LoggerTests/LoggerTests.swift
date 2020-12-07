@@ -2,6 +2,7 @@ import XCTest
 @testable import Logger
 
 final class LoggerTests: XCTestCase {
+
     func testExample() {
         // Given
         let logger: ILogger = FileLogger("abc.log")
